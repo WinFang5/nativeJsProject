@@ -1,0 +1,7 @@
+@import "..\\..\\style.scss"; //第一个反斜杠是转义字符，第二个反斜杠是路径分隔符
+
+#previewModalContent {
+  img {
+    max-width: 100%; //解决图片超出新闻Modal框的问题
+  }
+}

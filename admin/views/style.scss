@@ -1,0 +1,37 @@
+html,
+body,
+.main {
+  height: 100%;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .topbar {
+    height: 50px;
+    // background-color: yellow;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .box {
+    flex: 1;
+    // background-color: blue;
+    margin-top: 50px;
+
+    // 主题内容
+    .content {
+      padding: 20px;
+
+      .maincontent {
+        padding: 20px;
+        box-shadow: 0 0 5px rgba($color: black, $alpha: 0.2);
+      }
+    }
+  }
+}
