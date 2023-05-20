@@ -8,3 +8,5 @@ npm i json-server -g
 进入到db文件夹
 json-server --watch db.json --port=5000
 
+### 运行网站主页
+运行 web/views/products/index.html
