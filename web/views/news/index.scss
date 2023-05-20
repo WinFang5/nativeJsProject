@@ -1,0 +1,78 @@
+@import "..\\style.scss"; //第一个反斜杠是转义字符，第二个反斜杠是路径分隔符
+
+// 搜索
+.bg-search {
+  background-image: url("http://localhost:5000/bg.jpg");
+  width: 100%;
+  height: calc(100vh - 35%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 100; //防止搜索结果被下面的卡片遮挡
+
+  .searchContainer {
+    position: absolute;
+    width: 70%;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .list-group {
+      opacity: 0.9,
+    }
+  }
+}
+
+// 新闻卡片
+.cardContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    width: 300px;
+
+    &:hover {
+      box-shadow: 0 0 10px black;
+    }
+
+    .cardbg {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+// 新闻分类
+#category {
+  min-height: 300px; //因为新闻分类的高度不固定，所以设置一个最小高度，可以让页面更加美观
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .tab-link {
+    color: black;
+  }
+
+  overflow: hidden;
+
+  .listItem {
+    padding: 10px;
+
+    overflow: hidden;
+
+    img {
+      float: left;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px black;
+    }
+
+  }
+}
